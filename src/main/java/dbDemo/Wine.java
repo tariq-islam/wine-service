@@ -30,7 +30,7 @@ We explicitly map the id variable to the "wine_id column in the database table
  private int id;
   
  private String name; 
- private int year;
+ private int yeardate;
  private String vineyard;
  private String varietal;
 
@@ -38,13 +38,13 @@ We explicitly map the id variable to the "wine_id column in the database table
 /**
 This is the constructor for the database object. 
 @param name The name of the  wine 
-@param year The wine's vintage
-@param vineyeard The vineyard that the wine originated from
+@param yeardate The wine's vintage
+@param vineyard The vineyard that the wine originated from
 @param varietal The wine's varietal
 **/
- public Wine(String name, int year, String vineyard, String varietal) {
+ public Wine(String name, int yeardate, String vineyard, String varietal) {
      this.name = name;
-     this.year = year;
+     this.yeardate = yeardate;
      this.vineyard = vineyard;
      this.varietal = varietal;
  }
@@ -65,12 +65,12 @@ public void setName(String name) {
 	this.name = name;
 }
 
-public int getYear() {
-	return year;
+public int getYearDate() {
+	return yeardate;
 }
 
-public void setYear(int year) {
-	this.year = year;
+public void setYearDate(int yeardate) {
+	this.yeardate = yeardate;
 }
 
 public String getVineyard() {
