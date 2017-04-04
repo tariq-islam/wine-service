@@ -14,7 +14,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.2.5.RELEASE</version>
+		<version>1.5.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -52,8 +52,6 @@
         		 <groupId>org.springframework.boot</groupId>
         		 <artifactId>spring-boot-starter-tomcat</artifactId>
      	    </dependency>
-
-	
    		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
@@ -68,6 +66,17 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
+		<!-- Teiid Dependency -->
+		<dependency>
+			<groupId>org.jboss.teiid</groupId>
+			<artifactId>teiid-client</artifactId>
+			<version>8.12.9.6_3-redhat-2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.teiid</groupId>
+			<artifactId>teiid-hibernate-dialect</artifactId>
+			<version>8.12.9.6_3-redhat-2</version>
 		</dependency>
 	</dependencies>
 	

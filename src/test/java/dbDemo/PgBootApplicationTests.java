@@ -2,17 +2,21 @@ package dbDemo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.web.WebAppConfiguration;
-import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.List;
+
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = WineApplication.class)
+@SpringBootTest(classes = WineApplication.class)
 @WebAppConfiguration
 public class PgBootApplicationTests {
+
+	//@Autowired
+	//private TeiidServerProperties teiidServerProperties;
 
 	@Test
 	public void contextLoads() {
 	}
-
 }
